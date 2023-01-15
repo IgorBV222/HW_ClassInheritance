@@ -15,6 +15,8 @@ public:
 	const std::string& getGender() const;
 	void setGender(const std::string& gender);
 
+	size_t getSize(const std::string& other);
+
 	
 private:
 	std::string _race;
@@ -33,6 +35,8 @@ public:
 	const std::string& getEducation() const;
 	void setEducation(const std::string& education);
 
+	size_t getSize(const std::string& other);
+
 private:
 	std::string _country;
 	std::string _education;
@@ -48,6 +52,8 @@ public:
 
 	int getAge() const;
 	void setAge(int age);
+
+	size_t getSize(const std::string& other);
 
 private:
 	std::string _name;

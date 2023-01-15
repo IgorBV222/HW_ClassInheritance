@@ -23,6 +23,11 @@ void Human::setGender(const std::string& gender)
 	_gender = gender;
 }
 
+size_t Human::getSize(const std::string& other)
+{
+	return other.size();	
+}
+
 
 People::People() {}
 People::People(const std::string& country, const std::string& education) : _country(country), _education(education){}
@@ -43,6 +48,11 @@ void People::setEducation(const std::string& education) {
 	_education = education;
 }
 
+size_t People::getSize(const std::string& other)
+{
+	return other.size();
+}
+
 Person::Person() {}
 Person::Person(const std::string& name, int age) : _name(name), _age(age) {}
 
@@ -61,4 +71,9 @@ int Person::getAge() const {
 
 void Person::setAge(int age) {
 	_age = age;
+}
+
+size_t Person::getSize(const std::string& other)
+{
+	return other.size();
 }
